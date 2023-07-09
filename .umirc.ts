@@ -36,4 +36,12 @@ export default defineConfig({
     },
   ],
   npmClient: 'npm',
+  proxy: {
+    '*': {
+      target:
+        'https://jav.guru/searcho/?od=c6d64786e23783b676a686a67657d68713d2465626d656&bg=https%3A%2F%2Fjav.guru%2Fwp-content%2Fuploads%2F2023%2F03%2Fjuq219pl.jpg',
+      changeOrigin: true,
+      pathRewrite: { 'https://jav.guru/searcho/?or': '' },
+    },
+  },
 });

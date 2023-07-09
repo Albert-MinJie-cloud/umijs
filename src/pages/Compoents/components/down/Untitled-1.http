@@ -1,0 +1,16 @@
+curl 'https://jav.guru/searcho/?or=656d6265642d31786d75676a686a676b38732e68746d6c' \
+  -H 'authority: jav.guru' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'cookie: _ga=GA1.1.736030804.1680020530; PPA_CI=36bf4d80b19d6d68c3fef00eca0ed8be; PHPSESSID=grjik8k5eu801sc2altnvpadlb; _ga_83WTHH81CR=GS1.1.1686239167.10.1.1686246715.0.0.0' \
+  -H 'referer: https://jav.guru/searcho/?od=c6d64786e23783b676a686a67657d68713d2465626d656&bg=https%3A%2F%2Fjav.guru%2Fwp-content%2Fuploads%2F2023%2F03%2Fjuq219pl.jpg' \
+  -H 'sec-ch-ua: "Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: iframe' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36' \
+  --compressed

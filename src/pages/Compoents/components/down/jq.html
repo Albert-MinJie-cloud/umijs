@@ -1,0 +1,84 @@
+/* globals jQuery */
+(function($) {
+
+    $('a#wp-btn-iframe').on('click', function(e) {
+
+        e.preventDefault();
+
+        var $el = $(this),
+            $btn_localize_id = $el.data('localize'),
+            $iframe_data = window[$btn_localize_id],
+            $insert_in = $iframe_data.insert_in,
+            $iframe_url = Base64.decode($iframe_data.iframe_url),
+            $iframe_html = $( '<iframe/>' )
+                .attr( 'data-localize', $btn_localize_id )
+                .attr( 'allowfullscreen', 'true' )
+                .attr( 'webkitallowfullscreen', 'true' )
+                .attr( 'mozallowfullscreen', 'true' )
+                .attr( 'src', $iframe_url )
+                .attr( 'frameborder', '0' )
+                .attr( 'width', $iframe_data.iframe_width )
+                .attr( 'height', $iframe_data.iframe_height )
+                .attr( 'scrolling', 'no' );
+
+        if ( $iframe_data.iframe_id !== '' ) {
+            $iframe_html.attr( 'id', $iframe_data.iframe_id );
+        }
+
+        if ( $iframe_data.iframe_class !== '' ) {
+            $iframe_html.attr( 'class', $iframe_data.iframe_class );
+        }
+
+        if ( $iframe_data.iframe_style !== '' ) {
+            $iframe_html.attr( 'style', $iframe_data.iframe_style );
+        }
+
+        if ( $iframe_data.container !== 'false' ) {
+
+            $iframe_html = $('<' + $iframe_data.container + '/>').html($iframe_html);
+
+            if ( $iframe_data.container_id !== '' ) {
+                $iframe_html.attr( 'id', $iframe_data.container_id );
+            }
+
+            if ( $iframe_data.container_class !== '' ) {
+                $iframe_html.attr( 'class', $iframe_data.container_class );
+            }
+
+            if ( $iframe_data.container_style !== '' ) {
+                $iframe_html.attr( 'style', $iframe_data.container_style );
+            }
+
+        }
+
+
+        // Prepare insert_in
+        if ( $insert_in === 'false' ) {
+            $el.after($iframe_html);
+        } else {
+            if ( ! $($insert_in).length ) {
+                console.error('Error:', 'The tag ' + $insert_in + ' to insert the iframe is missing.');
+                return;
+            } else {
+                $($insert_in).html($iframe_html);
+            }
+        }
+
+        if ( $iframe_data.scroll !== 'false' ) {
+            var $scrollTarget = 'iframe[data-localize="' + $btn_localize_id + '"]';
+
+            if ( $iframe_data.scroll !== 'true' ) {
+                $scrollTarget = $iframe_data.scroll;
+            }
+
+            $.smoothScroll({
+                scrollTarget: $scrollTarget
+            });
+        }
+
+        if ( $iframe_data.hide === 'true' ) {
+            $el.remove();
+        }
+    })
+
+})( jQuery );

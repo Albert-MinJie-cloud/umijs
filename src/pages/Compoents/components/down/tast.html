@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>...</title>
+    <style media="screen">
+      body {
+        overflow: hidden;
+        margin: 0px;
+        background-color: rgb(2, 2, 2);
+        background: url('https://jav.guru/wp-content/uploads/2023/03/juq219pl.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100%;
+      }
+      .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+        color: white;
+        text-align: center;
+        background: black;
+        background: #000000b3;
+        border-radius: 6px;
+      }
+      .footer {
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        color: grey;
+        font-size: 7px;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: grey;
+      }
+
+      .playbutton {
+        width: fit-content;
+        border-radius: 3px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+      .playbutton span {
+        font-size: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        position: absolute;
+        width: 90px;
+        height: 60px;
+        background-color: #333;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        border-radius: 6px;
+      }
+      .playbutton span:before {
+        content: '';
+        border-style: solid;
+        border-width: 15px 0 15px 26px;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      @-moz-document url-prefix() {
+        .playbutton span {
+          font-size: 42px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="middle">
+        <script type="application/javascript">
+          var ad_idzone = '2602247',
+            ad_popup_fallback = false,
+            ad_popup_force = true,
+            ad_chrome_enabled = true,
+            ad_new_tab = false,
+            ad_frequency_period = 30,
+            ad_frequency_count = 3,
+            ad_trigger_method = 2,
+            ad_trigger_class = 'middle',
+            ad_t_venor = false;
+        </script>
+        <script
+          type="application/javascript"
+          src="https://a.realsrv.com/popunder1000.js"
+        ></script>
+        <div class="inner">
+          <h1></h1>
+          <p><br /><span id="loader"></span></p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function show_continue() {
+        var inner = document.getElementsByClassName('inner')[0];
+        inner.innerHTML =
+          '<div onclick="start_player()" class="playbutton"> <span></span></div>';
+      }
+
+      String.prototype.Decode = function () {
+        var r = '';
+        for (var i = 0; i < this.length; i += 2) {
+          r += unescape('%' + this.substr(i, 2));
+        }
+        return r;
+      };
+
+      String.prototype.edoceD = function () {
+        var x = this.length;
+        var edoceD = '';
+        while (x >= 0) {
+          edoceD = edoceD + this.charAt(x);
+          x--;
+        }
+        return edoceD;
+      };
+
+      var intv = setInterval(function () {
+        if (document.getElementById('loader').innerHTML != '') {
+          document.getElementById('loader').innerHTML += '';
+        } else {
+          clearInterval(intv);
+          show_continue();
+        }
+      }, 100);
+
+      function start_player() {
+        var OLID = 'c6d64786e23783b676a686a67657d68713d2465626d656';
+        OLID = OLID.edoceD();
+        document.body.innerHTML =
+          '<iframe frameborder="0" src="https://jav.guru/searcho/?or=' +
+          OLID +
+          '" allowfullscreen style="position:absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; width: 100%;height: 100%;"></iframe>';
+      }
+    </script>
+  </body>
+</html>

@@ -1,11 +1,10 @@
 import { PageContainer } from '@ant-design/pro-components';
-import { Select } from 'antd';
+import Down from './components/down';
 
 const Compoents: React.FC = () => {
   return (
     <PageContainer ghost>
-      <div>1</div>
-      <Select></Select>
+      <Down />
     </PageContainer>
   );
 };
